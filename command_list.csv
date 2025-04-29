@@ -1,0 +1,40 @@
+    1  git config --global user.name "Kristina Mishyna"
+    2  git config --global user.email mishinakristy@gmail.com
+    3  git clone https://github.com/Kristina-Mishyna/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add
+    9  git status
+   10  git add .gitignore
+   11  git status
+   12  git commit -m "Додано text_ignore.txt до .gitignore"
+   13  touch main_test.txt
+   14  ls
+   15  git add
+   16  git add
+   17  git status
+   18  git add
+   19  git status
+   20  git add main_test.txt
+   21  git status
+   22  git commit -m "Створено порожній файл main_test.txt"
+   23  git checkout -b development
+   24  git branch
+   25  touch develop_test.txt
+   26  ls
+   27  git add develop_test.txt
+   28  git status
+   29  git commit -m "Створено порожній файл develop_test.txt у гілці development"
+   30  nano develop_test.txt
+   31  git status
+   32  git commit -m "Додано невелику зміну до develop_test.txt"
+   33  git add develop_test.txt
+   34  git status
+   35  git commit -m "Додано невелику зміну до develop_test.txt"
+   36  git checkout main
+   37  git branch
+   38  git merge development
+   39  git log
+   40  history > command_list.csv
